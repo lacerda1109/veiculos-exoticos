@@ -1,0 +1,142 @@
+/* HEADER */
+header {
+    box-shadow: 0 1px 5px #ccc;
+}
+
+header .center .menu-desktop ul li:nth-of-type(2) a {
+    color: var(--app-red);
+}
+
+header .center .menu-mobile ul li:nth-of-type(2) a {
+color: var(--app-red);
+}
+
+/* FOOTER */
+footer .center nav ul li:nth-of-type(2) a {
+    color: var(--app-red);
+}
+
+/* VENDA */
+section.venda .center {
+    margin: 50px auto;
+}
+
+section.venda .center .titulo-venda {
+    text-align: center;
+}
+
+section.venda .center .titulo-venda .titulo-container {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+section.venda .center .titulo-venda .titulo-container .linha {
+    height: 4px;
+    background-color: var(--app-red);
+}
+
+section.venda .center .container-venda {
+    display: flex;
+    gap: 20px;
+}
+
+/* filtros */
+section.venda .center .container-venda .filtros-venda {
+    width: 230px;
+}
+
+section.venda .center .container-venda .filtros-venda .preco h4 {
+    margin-bottom: 10px;
+}
+
+section.venda .center .container-venda .filtros-venda .preco {
+    width: 100%;
+}
+
+section.venda .center .container-venda .filtros-venda .preco .preco-barra {
+    height: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: relative;
+}
+
+section.venda .center .container-venda .filtros-venda .preco .preco-barra .preenchimento {
+    height: 100%;
+    width: 30%;
+    border-radius: 8px;
+    background-color: var(--app-red);
+    position: absolute;
+}
+
+section.venda .center .container-venda .filtros-venda .preco .preco-barra .preenchimento .marcador {
+    width: 22px;
+    height: 22px;
+    border-radius: 30px;
+    position: absolute;
+    top: -3px;
+    right: 0;
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+    border: 1px solid rgb(131, 131, 131);
+}
+
+section.venda .center .container-venda .filtros-venda .preco .valores {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.venda .center .container-venda .filtros-venda .ano h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section.venda .center .container-venda .filtros-venda .ano .decadas input[type="checkbox"]:checked {
+    accent-color: var(--app-red);
+}
+
+/* conteudo */
+section.venda .center .container-venda .conteudo-venda {
+    /* padding-left: 20px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.venda .center .container-venda .conteudo-venda .card {
+    width: 31.5%;
+}
+
+section.venda .center .container-venda .conteudo-venda .card .imagem-card {
+    background-color: #ccc;
+    width: 100%;
+    padding-top: 80%;
+}
+
+section.venda .center .container-venda .conteudo-venda .card .card-info h4 {
+    margin-top: 10px;
+}
+
+section.venda .center .container-venda .conteudo-venda .card .card-info p {
+    margin-top: 5px;
+}
+
+section.venda .center .container-venda .conteudo-venda .card .card-info button {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    section.venda .center .container-venda {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.venda .center .container-venda .conteudo-venda .card {
+        width: 100%;
+    }
+}

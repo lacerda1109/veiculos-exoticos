@@ -1,0 +1,95 @@
+header .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .center img {
+    height: 50px;
+}
+
+header .center .menu-desktop ul {
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+}
+
+header .center .menu-desktop ul a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.1s;
+    font-weight: 400;
+}
+
+header .center .menu-desktop ul li {
+    position: relative;
+    top: 0;
+    transition-property: top;
+    transition-duration: 0.1s;
+}
+
+header .center .menu-desktop ul li:hover {
+    position: relative;
+    top: -2px;
+    transition-property: top;
+    transition-duration: 0.1s;
+}
+
+header .center .menu-desktop ul a:hover {
+    color: var(--app-red);
+    transition: color 0.1s;
+}
+
+/* mobile */
+header .center .menu-mobile {
+display: none;
+}
+
+header .center .menu-mobile img {
+height: 27px;
+position: relative;
+top: 4px;
+cursor: pointer;
+}
+
+header .center .menu-mobile ul {
+display: none;
+position: absolute;
+right: 30px;
+top: 75px;
+list-style-type: none;
+background-color: white;
+text-align: center;
+border-radius: 4px;
+overflow: hidden;
+box-shadow: 0 0 4px 0 rgb(44, 44, 44);
+z-index: 999;
+}
+
+.show-menu {
+display: block !important;
+}
+
+header .center .menu-mobile ul li a {
+display: inline-block;
+text-decoration: none;
+color: black;
+padding: 10px 45px;
+}
+
+header .center .menu-mobile ul li.linha {
+height: 4px;
+background-color: var(--app-red);
+}
+
+@media screen and (max-width: 500px) {
+    header .center nav.menu-desktop {
+        display: none;
+    }
+
+    header .center .menu-mobile {
+        display: block;
+    }
+}

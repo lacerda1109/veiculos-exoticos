@@ -1,0 +1,51 @@
+footer {
+    background-color: var(--sec-color);
+    color: white;
+    padding: 20px 0;
+}
+
+footer .center {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .center nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+}
+
+footer .center nav ul a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.1s;
+}
+
+footer .center nav ul li {
+    position: relative;
+    transition: top 0.1s;
+}
+
+footer .center nav ul li:hover {
+    top: -2px;
+    transition: top 0.1s;
+}
+
+footer .center nav ul a:hover {
+    color: var(--app-red);
+    transition: color 0.1s;
+}
+
+footer .center p {
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    footer .center {
+        justify-content: center;
+    }
+
+    footer .center nav {
+        display: none;
+    }
+}
