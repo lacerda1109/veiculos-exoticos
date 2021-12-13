@@ -14,48 +14,36 @@ footer .center nav ul li:nth-of-type(1) a {
 
 /* BANNER */
 section.banner {
-    height: 70vh;
+    height: calc(100vh - 74px);
     background-color: black;
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/capa.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom right;
+    background-size: cover;
+    background-position: center;
 }
 
-section.banner .center {
+section.banner .banner-info {
     height: 100%;
     display: flex;
-    align-items: center;
-}
-
-section.banner .center .banner-texto {
-    display: flex;
     flex-direction: column;
-    padding: 0 5%;
+    justify-content: center;
 }
 
-section.banner .center .banner-texto .texto-single {
+section.banner .banner-info h1 {
+    text-align: center;
     color: white;
-    font-family: oswald;
-    font-style: italic;
-    font-size: 30px;
-
-    padding-left: 20px;
-    margin-bottom: 10px;
-
-    background-image: url(../img/box-text.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    width: 200px;
+    font-size: 70px;
+    font-weight: 100;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-section.banner .center .banner-texto .texto-single:nth-of-type(2) {
-    margin-left: 10px;
-}
-
-section.banner .center .banner-texto .texto-single:nth-of-type(1) {
-    margin-left: 20px;
+section.banner .center .banner-texto p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
 section.banner .center .banner-texto .texto-slogan {
@@ -73,7 +61,7 @@ section.banner .center .banner-texto .texto-slogan {
 
 /* DESTAQUE */
 section.destaque {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 50px auto;
     padding: 0 3%;
 }
@@ -87,8 +75,12 @@ section.destaque .destaque-titulo .destaque-container {
     margin-bottom: 20px;
 }
 
+section.destaque .destaque-titulo .destaque-container h3 {
+    padding-bottom: 5px;
+}
+
 section.destaque .destaque-titulo .destaque-container .linha {
-    height: 4px;
+    height: 3px;
     background-color: var(--app-red);
 }
 
@@ -103,8 +95,22 @@ section.destaque .destaque-itens .card {
 
 section.destaque .destaque-itens .card .imagem-card {
     background-color: #ccc;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     padding-top: 70%;
+}
+
+section.destaque .destaque-itens .card:nth-of-type(1) .imagem-card {
+    background-image: url(../img/mercedes-amg-gt.jpg);
+}
+
+section.destaque .destaque-itens .card:nth-of-type(2) .imagem-card {
+    background-image: url(../img/maclaren-720s-spider.jpg);
+}
+
+section.destaque .destaque-itens .card:nth-of-type(3) .imagem-card {
+    background-image: url(../img/bugatti-chiron.jpg);
 }
 
 section.destaque .destaque-itens .card .card-info h4 {
@@ -180,6 +186,7 @@ section.infos .depoimentos .info-container .itens-depoimentos .footer-depoimento
 
 section.infos .depoimentos .info-container .itens-depoimentos .footer-depoimentos .setas img {
     height: 20px;
+    cursor: pointer;
 }
 
 section.infos .depoimentos .info-container .itens-depoimentos .footer-depoimentos .setas {
@@ -203,8 +210,12 @@ section.contato .contato-titulo .contato-container {
     margin-bottom: 20px;
 }
 
+section.contato .contato-titulo .contato-container h3 {
+    padding-bottom: 5px;
+}
+
 section.contato .contato-titulo .contato-container .linha {
-    height: 4px;
+    height: 3px;
     background-color: var(--app-red);
 }
 
@@ -257,6 +268,10 @@ section.contato form button {
 
 @media screen and (max-width: 500px) {
     /* BANNER */
+    section.banner {
+        background-position: -550px center;
+    }
+
     section.banner .center .banner-texto {
         margin: 0 auto;
     }

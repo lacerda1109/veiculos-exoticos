@@ -36,8 +36,9 @@ footer .center nav ul a:hover {
     transition: color 0.1s;
 }
 
-footer .center p {
+footer .center a {
     color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {
