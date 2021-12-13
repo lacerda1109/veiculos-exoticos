@@ -1,3 +1,7 @@
+header {
+    background-color: var(--sec-color);
+}
+
 header .center {
     display: flex;
     justify-content: space-between;
@@ -18,9 +22,8 @@ header .center .menu-desktop ul {
 
 header .center .menu-desktop ul a {
     text-decoration: none;
-    color: black;
+    color: white;
     transition: color 0.1s;
-    font-weight: 400;
 }
 
 header .center .menu-desktop ul li {
@@ -44,44 +47,45 @@ header .center .menu-desktop ul a:hover {
 
 /* mobile */
 header .center .menu-mobile {
-display: none;
+    display: none;
 }
 
-header .center .menu-mobile img {
-height: 27px;
-position: relative;
-top: 4px;
-cursor: pointer;
+header .center .menu-mobile i {
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
 }
 
 header .center .menu-mobile ul {
-display: none;
-position: absolute;
-right: 30px;
-top: 75px;
-list-style-type: none;
-background-color: white;
-text-align: center;
-border-radius: 4px;
-overflow: hidden;
-box-shadow: 0 0 4px 0 rgb(44, 44, 44);
-z-index: 999;
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 65px;
+    list-style-type: none;
+    background-color: white;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 rgb(70, 70, 70);
+    z-index: 999;
 }
 
 .show-menu {
-display: block !important;
+    display: block !important;
 }
 
 header .center .menu-mobile ul li a {
-display: inline-block;
-text-decoration: none;
-color: black;
-padding: 10px 45px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 45px;
 }
 
 header .center .menu-mobile ul li.linha {
-height: 4px;
-background-color: var(--app-red);
+    height: 4px;
+    background-color: var(--app-red);
 }
 
 @media screen and (max-width: 500px) {
