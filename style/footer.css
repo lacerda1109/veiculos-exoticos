@@ -16,6 +16,7 @@ footer .center nav ul {
 }
 
 footer .center nav ul a {
+    font-family: dosis;
     text-decoration: none;
     color: white;
     transition: color 0.1s;
@@ -36,9 +37,25 @@ footer .center nav ul a:hover {
     transition: color 0.1s;
 }
 
-footer .center a {
+footer .center .programador {
+    display: flex;
+    gap: 10px;
+}
+
+footer .center p {
     color: white;
     text-decoration: none;
+}
+
+footer .center a i {
+    color: white;
+    font-size: 20px;
+    transition: color 0.1s;
+}
+
+footer .center a:hover i {
+    color: var(--app-red);
+    transition: color 0.1s;
 }
 
 @media screen and (max-width: 800px) {

@@ -31,11 +31,12 @@ section.banner .banner-info {
 
 section.banner .banner-info h1 {
     text-align: center;
-    color: white;
+    color: var(--app-red);
     font-size: 70px;
     font-weight: 100;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(26, 26, 26, 0.9);
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.05);
 }
 
 section.banner .center .banner-texto p {
