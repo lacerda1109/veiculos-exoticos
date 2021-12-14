@@ -4,16 +4,16 @@ header {
 }
 
 header .center .menu-desktop ul li:nth-of-type(2) a {
-    color: var(--app-red);
+    color: var(--main-color);
 }
 
 header .center .menu-mobile ul li:nth-of-type(2) a {
-color: var(--app-red);
+color: var(--main-color);
 }
 
 /* FOOTER */
 footer .center nav ul li:nth-of-type(2) a {
-    color: var(--app-red);
+    color: var(--main-color);
 }
 
 /* VENDA */
@@ -32,7 +32,7 @@ section.venda .center .titulo-venda .titulo-container {
 
 section.venda .center .titulo-venda .titulo-container .linha {
     height: 4px;
-    background-color: var(--app-red);
+    background-color: var(--main-color);
 }
 
 section.venda .center .container-venda {
@@ -65,7 +65,7 @@ section.venda .center .container-venda .filtros-venda .preco .preco-barra .preen
     height: 100%;
     width: 30%;
     border-radius: 8px;
-    background-color: var(--app-red);
+    background-color: var(--main-color);
     position: absolute;
 }
 
@@ -93,7 +93,7 @@ section.venda .center .container-venda .filtros-venda .ano h4 {
 }
 
 section.venda .center .container-venda .filtros-venda .ano .decadas input[type="checkbox"]:checked {
-    accent-color: var(--app-red);
+    accent-color: var(--main-color);
 }
 
 /* conteudo */

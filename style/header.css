@@ -42,7 +42,7 @@ header .center .menu-desktop ul li:hover {
 }
 
 header .center .menu-desktop ul a:hover {
-    color: var(--app-red);
+    color: var(--main-color);
     transition: color 0.1s;
 }
 
@@ -82,11 +82,12 @@ header .center .menu-mobile ul li a {
     text-decoration: none;
     color: black;
     padding: 10px 45px;
+    font-family: dosis;
 }
 
 header .center .menu-mobile ul li.linha {
     height: 4px;
-    background-color: var(--app-red);
+    background-color: var(--main-color);
 }
 
 @media screen and (max-width: 500px) {

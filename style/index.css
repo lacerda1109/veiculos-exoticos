@@ -1,15 +1,15 @@
 /* HEADER */
 header .center .menu-desktop ul li:nth-of-type(1) a {
-    color: var(--app-red);
+    color: var(--main-color);
 }
 
 header .center .menu-mobile ul li:nth-of-type(1) a {
-color: var(--app-red);
+color: var(--main-color);
 }
 
 /* FOOTER */
 footer .center nav ul li:nth-of-type(1) a {
-    color: var(--app-red);
+    color: var(--main-color);
 }
 
 /* BANNER */
@@ -31,7 +31,7 @@ section.banner .banner-info {
 
 section.banner .banner-info h1 {
     text-align: center;
-    color: var(--app-red);
+    color: var(--main-color);
     font-size: 70px;
     font-weight: 100;
     width: 100%;
@@ -63,12 +63,12 @@ section.banner .center .banner-texto .texto-slogan {
 /* DESTAQUE */
 section.destaque {
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 100px auto;
     padding: 0 3%;
 }
 
 section.destaque .destaque-titulo {
-    text-align: center;
+    padding-left: 50px;
 }
 
 section.destaque .destaque-titulo .destaque-container {
@@ -77,12 +77,13 @@ section.destaque .destaque-titulo .destaque-container {
 }
 
 section.destaque .destaque-titulo .destaque-container h3 {
-    padding-bottom: 5px;
+    padding-top: 3px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.05);
 }
 
 section.destaque .destaque-titulo .destaque-container .linha {
-    height: 3px;
-    background-color: var(--app-red);
+    height: 2px;
+    background-color: var(--sec-color);
 }
 
 section.destaque .destaque-itens {
@@ -94,12 +95,39 @@ section.destaque .destaque-itens .card {
     width: 33%;
 }
 
-section.destaque .destaque-itens .card .imagem-card {
+section.destaque .destaque-itens .card .image-wrapper {
+    width: 100%;
+    padding-top: 50%;
+    border-radius: 4px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+section.destaque .destaque-itens .card .image-wrapper img {
+    width: 100%;
+
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+section.destaque .destaque-itens .card .image-wrapper:hover img {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+/* section.destaque .destaque-itens .card .imagem-card {
     background-color: #ccc;
     background-size: cover;
     background-position: center;
     width: 100%;
-    padding-top: 70%;
+    padding-top: 50%;
+    border-radius: 4px;
 }
 
 section.destaque .destaque-itens .card:nth-of-type(1) .imagem-card {
@@ -112,6 +140,10 @@ section.destaque .destaque-itens .card:nth-of-type(2) .imagem-card {
 
 section.destaque .destaque-itens .card:nth-of-type(3) .imagem-card {
     background-image: url(../img/bugatti-chiron.jpg);
+} */
+
+section.destaque .destaque-itens .card .card-info {
+    padding-left: 10px;
 }
 
 section.destaque .destaque-itens .card .card-info h4 {
@@ -156,12 +188,22 @@ section.infos .servicos .info-container .itens-servicos ul {
     list-style-position: inside;
 }
 
+section.infos .servicos .info-container .itens-servicos button {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+section.infos .servicos .info-container .itens-servicos button:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
 section.infos .servicos .info-container .itens-servicos ul li {
     color: white;
 }
 
 section.infos .depoimentos {
-    background-color: var(--app-red);
+    background-color: var(--main-color);
     width: 50%;
     padding: 50px 0;
     display: flex;
@@ -197,13 +239,13 @@ section.infos .depoimentos .info-container .itens-depoimentos .footer-depoimento
 
 /* CONTATO */
 section.contato {
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 700px;
+    margin: 100px auto;
     padding: 0 3%;
 }
 
 section.contato .contato-titulo {
-    text-align: center;
+    padding-left: 50px;
 }
 
 section.contato .contato-titulo .contato-container {
@@ -212,16 +254,18 @@ section.contato .contato-titulo .contato-container {
 }
 
 section.contato .contato-titulo .contato-container h3 {
-    padding-bottom: 5px;
+    padding-top: 3px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.05);
 }
+
 
 section.contato .contato-titulo .contato-container .linha {
     height: 3px;
-    background-color: var(--app-red);
+    background-color: var(--sec-color);
 }
 
 section.contato form {
-    max-width: 80%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -265,6 +309,27 @@ section.contato form button {
         width: 100%;
         padding: 50px 20px;
     }
+
+    /* DESTAQUE */
+    section.destaque .destaque-titulo {
+        text-align: center;
+        padding: 0;
+    }
+    
+    section.destaque .destaque-itens {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    section.destaque .destaque-itens .card {
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+    }
+    
+    section.destaque .destaque-itens .card .card-info {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -281,23 +346,12 @@ section.contato form button {
         display: none;
     }
 
-    /* DESTAQUE */
-    section.destaque .destaque-titulo {
-        gap: 0px;
-    }
-
-    section.destaque .destaque-itens {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    section.destaque .destaque-itens .card {
-        width: 100%;
-        text-align: center;
-        padding: 0 30px;
-    }
-
     /* CONTATO */
+    section.contato .contato-titulo {
+        text-align: center;
+        padding: 0;
+    }
+
     section.contato form .lado {
         flex-direction: column;
     }
