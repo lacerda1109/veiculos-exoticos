@@ -50,6 +50,10 @@ section.sobre .center .conteudo-sobre .principal .imagem-capa {
     background: #ccc;
     width: 100%;
     padding-top: 50%;
+    border-radius: 4px;
+    background-image: url(../img/ferrari-sobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section.sobre .center .conteudo-sobre .principal h3 {
@@ -70,6 +74,10 @@ section.sobre .center .conteudo-sobre .secundario .imagem-secundario {
     background: #ccc;
     width: 30%;
     padding-top: 30%;
+    border-radius: 4px;
+    background-image: url(../img/exotic-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section.sobre .center .conteudo-sobre .secundario p {
