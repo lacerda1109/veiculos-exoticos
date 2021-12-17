@@ -4,16 +4,16 @@ header {
 }
 
 header .center .menu-desktop ul li:nth-of-type(3) a {
-    color: var(--app-red);
+    color: var(--main-color);
 }
 
 header .center .menu-mobile ul li:nth-of-type(3) a {
-color: var(--app-red);
+color: var(--main-color);
 }
 
 /* FOOTER */
 footer .center nav ul li:nth-of-type(3) a {
-    color: var(--app-red);
+    color: var(--main-color);
 }
 
 /* SOBRE */

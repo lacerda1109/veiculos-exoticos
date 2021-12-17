@@ -33,7 +33,7 @@ footer .center nav ul li:hover {
 }
 
 footer .center nav ul a:hover {
-    color: var(--app-red);
+    color: var(--main-color);
     transition: color 0.1s;
 }
 
@@ -54,7 +54,7 @@ footer .center a i {
 }
 
 footer .center a:hover i {
-    color: var(--app-red);
+    color: var(--main-color);
     transition: color 0.1s;
 }
 
