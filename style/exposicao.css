@@ -1,0 +1,95 @@
+/* HEADER */
+header {
+    box-shadow: 0 1px 5px #ccc;
+}
+
+header .center .menu-desktop ul li:nth-of-type(2) a {
+    color: var(--main-color);
+}
+
+header .center .menu-mobile ul li:nth-of-type(2) a {
+color: var(--main-color);
+}
+
+/* FOOTER */
+footer .center nav ul li:nth-of-type(2) a {
+    color: var(--main-color);
+}
+
+/* EXPOSIÇÃO */
+section.venda .center {
+    margin: 50px auto;
+}
+
+section.venda .center .venda-titulo {
+    padding-left: 50px;
+}
+
+section.venda .center .venda-titulo .venda-container {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+section.venda .center .venda-titulo .venda-container h3 {
+    padding-top: 3px;
+    border-top: 2px solid var(--sec-color);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* conteudo */
+section.venda .center .container-venda .conteudo-venda {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.venda .center .container-venda .conteudo-venda .card {
+    width: 31.5%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+section.venda .center .container-venda .conteudo-venda .card .imagem-card {
+    background-color: #ccc;
+    width: 100%;
+    padding-top: 65%;
+    overflow: hidden;
+    position: relative;
+}
+
+section.venda .center .container-venda .conteudo-venda .card .imagem-card img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+section.venda .center .container-venda .conteudo-venda .card .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+section.venda .center .container-venda .conteudo-venda .card .card-info p {
+    margin-top: 5px;
+}
+
+section.venda .center .container-venda .conteudo-venda .card .card-info button {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    section.venda .center .container-venda {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.venda .center .container-venda .conteudo-venda .card {
+        width: 100%;
+    }
+}
