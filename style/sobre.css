@@ -33,12 +33,8 @@ section.sobre .center .titulo-sobre .titulo-container {
 
 section.sobre .center .titulo-sobre .titulo-container h3 {
     padding-top: 3px;
+    border-top: 2px solid var(--sec-color);
     text-shadow: 3px 3px rgba(0, 0, 0, 0.05);
-}
-
-section.sobre .center .titulo-sobre .titulo-container .linha {
-    height: 3px;
-    background-color: var(--sec-color);
 }
 
 /* conteudo */

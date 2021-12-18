@@ -78,12 +78,8 @@ section.destaque .destaque-titulo .destaque-container {
 
 section.destaque .destaque-titulo .destaque-container h3 {
     padding-top: 3px;
+    border-top: 2px solid var(--sec-color);
     text-shadow: 3px 3px rgba(0, 0, 0, 0.05);
-}
-
-section.destaque .destaque-titulo .destaque-container .linha {
-    height: 2px;
-    background-color: var(--sec-color);
 }
 
 section.destaque .destaque-itens {
@@ -186,13 +182,8 @@ section.contato .contato-titulo .contato-container {
 
 section.contato .contato-titulo .contato-container h3 {
     padding-top: 3px;
+    border-top: 2px solid var(--sec-color);
     text-shadow: 3px 3px rgba(0, 0, 0, 0.05);
-}
-
-
-section.contato .contato-titulo .contato-container .linha {
-    height: 3px;
-    background-color: var(--sec-color);
 }
 
 section.contato form {
