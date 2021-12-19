@@ -17,7 +17,6 @@ header .center img {
 header .center .menu-desktop ul {
     list-style-type: none;
     display: flex;
-    gap: 45px;
 }
 
 header .center .menu-desktop ul a {
@@ -25,6 +24,7 @@ header .center .menu-desktop ul a {
     text-decoration: none;
     color: white;
     transition: color 0.1s;
+    padding: 15px 30px;
 }
 
 header .center .menu-desktop ul li {

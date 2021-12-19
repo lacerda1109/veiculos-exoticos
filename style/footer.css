@@ -12,7 +12,7 @@ footer .center {
 footer .center nav ul {
     list-style-type: none;
     display: flex;
-    gap: 45px;
+    line-height: 24px;
 }
 
 footer .center nav ul a {
@@ -20,6 +20,7 @@ footer .center nav ul a {
     text-decoration: none;
     color: white;
     transition: color 0.1s;
+    padding: 15px 30px;
 }
 
 footer .center nav ul li {
