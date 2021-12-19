@@ -39,6 +39,7 @@ footer .center nav ul a:hover {
 
 footer .center .programador {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
