@@ -82,6 +82,11 @@ section.venda .center .container-venda .conteudo-venda .card .card-info button {
 }
 
 @media screen and (max-width: 500px) {
+    section.venda .center .venda-titulo {
+        padding-left: 0;
+        text-align: center;
+    }
+
     section.venda .center .container-venda {
         flex-direction: column;
         align-items: center;

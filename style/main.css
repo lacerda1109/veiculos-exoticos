@@ -70,3 +70,10 @@ input:focus, textarea:focus {
     transition-property: background-color, color;
     transition-duration: .4s;
 }
+
+/* Responsividade dos títulos */
+@media screen and (max-width: 320px) {
+    h3 {
+        font-size: 1.4rem;
+    }
+}

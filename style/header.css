@@ -19,31 +19,26 @@ header .center .menu-desktop ul {
     display: flex;
 }
 
-header .center .menu-desktop ul a {
+header .center .menu-desktop ul li a {
     font-family: dosis;
     text-decoration: none;
+    padding: 13px 30px;
+    position: relative;
     color: white;
-    transition: color 0.1s;
-    padding: 15px 30px;
+    top: 0;
+    transition: color 0.1s, top 0.1s;
 }
 
 header .center .menu-desktop ul li {
+    padding: 14px 0;
     position: relative;
-    top: 0;
-    transition-property: top;
-    transition-duration: 0.1s;
 }
 
-header .center .menu-desktop ul li:hover {
+header .center .menu-desktop ul li:hover a {
     position: relative;
-    top: -2px;
-    transition-property: top;
-    transition-duration: 0.1s;
-}
-
-header .center .menu-desktop ul a:hover {
     color: var(--main-color);
-    transition: color 0.1s;
+    top: -2px;
+    transition: color 0.1s, top 0.1s;
 }
 
 /* mobile */

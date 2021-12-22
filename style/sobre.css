@@ -74,6 +74,7 @@ section.sobre .center .conteudo-sobre .secundario .imagem-secundario {
     background-image: url(../img/exotic-logo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 section.sobre .center .conteudo-sobre .secundario p {
@@ -81,13 +82,19 @@ section.sobre .center .conteudo-sobre .secundario p {
 }
 
 @media screen and (max-width: 500px) {
+    section.sobre .center .titulo-sobre {
+        padding-left: 0;
+        text-align: center;
+    }
+
     section.sobre .center .conteudo-sobre .secundario {
         flex-direction: column;
     }
 
     section.sobre .center .conteudo-sobre .secundario .imagem-secundario {
-        width: 100%;
-        padding-top: 80%;
+        width: 70%;
+        padding-top: 60%;
+        margin: auto;
     }
 
     section.sobre .center .conteudo-sobre .secundario p {
